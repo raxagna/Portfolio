@@ -126,7 +126,7 @@ h3 {
   height: 100vh;
 }
 #intro.section {
-  background: url(../../assets/img/illust/mellow-programmers-work.png) no-repeat top
+  background: url(../../assets/img/illust/cyborg-sparks-1.png) no-repeat top
     center/cover;
   position: relative;
 }
@@ -144,13 +144,13 @@ h3 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 #intro.section .underline {
-  border-bottom: 5px solid #009688;
+  border-bottom: 5px solid #aea602;
 }
 #intro.section .teal {
   padding: 0 10px;
 }
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(80, 13, 1, 0.5);
   height: 100%;
   left: 0;
   position: absolute;
