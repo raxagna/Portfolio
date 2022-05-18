@@ -64,6 +64,10 @@
                 </a>
             </li>
             <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+                        class="mdi-social-person small"></i><span>About</span></a>
+            </li>
+            <li class="bold">
                 <a aria-label="Navigate to the Projects section" href="#projects"
                     class="waves-effect waves-dark indigo-text"><i
                         class="mdi-av-web small"></i><span>Projects</span></a>
@@ -91,28 +95,29 @@
     </nav>
     <nav class="hide-on-large only">
         <ul id="slide-out" class="side-nav">
-            <li class="bold">
-                <a aria-label="Navigate to the Projects section" href="#projects"
-                    class="waves-effect waves-dark indigo-text"><i
-                        class="mdi-av-web small"></i><span>Projects</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the Education section" href="#education"
-                    class="waves-effect waves-dark orange-text"><i
-                        class="mdi-social-school small"></i><span>Education</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Navigate to the Contact section" href="#contact"
-                    class="waves-effect waves-dark brown-text"><i
-                        class="mdi-content-mail small"></i><span>Contact</span></a>
-            </li>
-            <li class="bold">
-                <a aria-label="Open Andrew's Resume in a new tab"
-                    href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
-                    target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i
-                        class="mdi-action-description small"></i><span>Resume</span></a>
-            </li>
-        </ul>
+            <ul id="slide-out" class="side-nav">
+                <li class="bold">
+                    <a aria-label="Navigate to the About section" href="#about"
+                        class="waves-effect waves-dark teal-text"><i
+                            class="mdi-social-person small"></i><span>About</span></a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Projects section" href="#projects"
+                        class="waves-effect waves-dark indigo-text"><i
+                            class="mdi-av-web small"></i><span>Projects</span></a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Navigate to the Contact section" href="#contact"
+                        class="waves-effect waves-dark brown-text"><i
+                            class="mdi-content-mail small"></i><span>Contact</span></a>
+                </li>
+                <li class="bold">
+                    <a aria-label="Open Andrew's Resume in a new tab"
+                        href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY"
+                        target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i
+                            class="mdi-action-description small"></i><span>Resume</span></a>
+                </li>
+            </ul>
     </nav>
     <!-- Main Content-->
     <main>
@@ -136,6 +141,40 @@
                 <p style="font-size:150% ! important;">
                     <strong style="padding:0px ! important;" class="yellow">Interests:</strong> &nbsp;
                     <span> Robotics, Computer Vision, Game Development, Language Learning</span>
+                </p>
+            </div>
+        </section>
+        <section id="about" class="section scrollspy">
+            <h3 class="page-title white-text teal">About</h3>
+            <div class="container flow-text">
+                <blockquote>
+                    <h2>
+                        Mission-driven full stack developer with a passion for thoughtful
+                        UI design, collaboration, and teaching.
+                    </h2>
+                </blockquote>
+                <p>
+                    I’ve always sought out opportunities and challenges that are
+                    meaningful to me. Although my professional path has taken many
+                    twists and turns — from touring and recording artist, to employee of
+                    the year at a non-profit, to dean's scholar at UPenn, to small
+                    business owner and entrepreneur — I've never stopped engaging my
+                    passion to help others and solve problems.
+                </p>
+                <p>
+                    As a web developer, I enjoy using my obsessive attention to detail,
+                    my unequivocal love for making things, and my mission-driven work
+                    ethic to literally change the world. That's why I’m excited to make
+                    a big impact at a high growth company.
+                </p>
+                <p>
+                    <strong>Current Focus</strong>:&nbsp;<a
+                        aria-label="Navigate to the Inclusive Design Patterns homepage"
+                        href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
+                        aria-label="Navigate to the Full Stack React homepage"
+                        href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
+                        aria-label='Navigate to the article "Scalable CSS"'
+                        href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
                 </p>
             </div>
         </section>
@@ -185,8 +224,7 @@
                     <div class="col s12 m6 l4">
                         <div class="card medium">
                             <div class="card-image waves-effect waves-block waves-light">
-                                <img alt="FlappyMord" src="/assets/img/flappymord.png"
-                                    class="activator" />
+                                <img alt="FlappyMord" src="/assets/img/flappymord.png" class="activator" />
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator teal-text hoverline">BlogSpire<i
@@ -206,7 +244,7 @@
                                     <li><strong>Client-side rendering</strong> via AJAX</li>
                                 </ul>
                                 <span class="card-title brown-text">Accomplishments<i
-                                    class="mdi-navigation-close right"></i></span>
+                                        class="mdi-navigation-close right"></i></span>
                                 <ul>
                                     <li><strong>Ruby on Rails</strong> backend</li>
                                     <li><strong>Materialize CSS</strong> frontend</li>
