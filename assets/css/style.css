@@ -144,11 +144,11 @@ h3 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 #intro.section .container a {
-  padding: 0 px;
+  padding: 0px;
   margin: 0 20px;
 }
 #intro.section .container i {
-  padding: 0 px;
+  padding: 0px;
 }
 #intro.section .underline {
   border-bottom: 5px solid #aea602;
