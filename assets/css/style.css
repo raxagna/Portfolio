@@ -6,8 +6,8 @@ a {
   color: #009688;
 }
 blockquote {
-  border-left: 5px solid #b31949;
-  color: #b31949;
+  border-left: 5px solid #a71e4a;
+  color: #a71e4a;
   font-size: 250%;
   font-weight: 400;
   margin: 20px 0;
@@ -132,7 +132,7 @@ h3 {
 }
 #intro.section .container {
   color: white;
-  font-weight: 200;
+  font-weight: 300;
   left: 0;
   position: absolute;
   top: 0;
@@ -151,7 +151,7 @@ h3 {
   padding: 0px;
 }
 #intro.section .underline {
-  border-bottom: 5px solid #aea602;
+  border-bottom: 5px solid #188d5f;
 }
 #intro.section .teal {
   padding: 0 10px;
