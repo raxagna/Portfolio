@@ -6,7 +6,7 @@ a {
   color: #009688;
 }
 blockquote {
-  border-left: 5px solid #d9297e;
+  border-left: 5px solid #c12671;
   color: #fcfcfc;
   font-size: 250%;
   font-weight: 400;
@@ -16,6 +16,13 @@ blockquote {
 blockquote * {
   font-size: inherit;
   line-height: inherit;
+}
+mark {
+  color: #ecd648;
+  background-color: #287a5a;
+  border-radius: 5px;
+  padding: 2px;
+  
 }
 .text-center {
   text-align: center;
