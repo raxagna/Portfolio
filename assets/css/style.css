@@ -20,7 +20,7 @@ blockquote * {
 mark {
   color: #ecd648;
   background-color: #287a5a;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 2px !important;
 }
 .text-center {
@@ -137,7 +137,7 @@ h3 {
   position: relative;
 }
 #intro.section .container {
-  color: white;
+  color: #2c273c;
   font-family: system-ui;
   font-weight: 200;
   left: 0;
@@ -145,7 +145,7 @@ h3 {
   top: 0;
 }
 #intro.section .container *:not(span) {
-  font-weight: 300; 
+  font-weight: 400; 
   padding: 0 30px;
   text-shadow: 1px 2px 5px rgb(105 20 45 / 45%);
 }
