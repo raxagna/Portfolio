@@ -21,8 +21,7 @@ mark {
   color: #ecd648;
   background-color: #287a5a;
   border-radius: 5px;
-  padding: 2px;
-  
+  padding: 2px !important;
 }
 .text-center {
   text-align: center;
@@ -139,6 +138,7 @@ h3 {
 }
 #intro.section .container {
   color: white;
+  font-family: system-ui;
   font-weight: 200;
   left: 0;
   position: absolute;
@@ -146,9 +146,8 @@ h3 {
 }
 #intro.section .container *:not(span) {
   font-weight: 300; 
-  /* line-height: 150%; */
   padding: 0 30px;
-  text-shadow: 1px 1px 5px rgb(106 18 46 / 85%);
+  text-shadow: 1px 2px 5px rgb(105 20 45 / 45%);
 }
 #intro.section .container a {
   padding: 0px;
@@ -164,7 +163,7 @@ h3 {
   padding: 0 10px;
 }
 .overlay {
-  background-color: rgba(80, 13, 1, 0.5);
+  background-color: rgb(80 40 1 / 40%);
   height: 100%;
   left: 0;
   position: absolute;
