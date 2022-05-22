@@ -1,9 +1,9 @@
-.contact .row{
+#contact .row{
   margin-right: -15px;
   margin-left: -15px;
 }
 
-.contact .form-control {
+#contact .form-control {
   display: block;
   width: 100%;
   height: 34px;
