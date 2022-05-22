@@ -4,6 +4,10 @@
   margin-bottom: 0px;
 }
 
+textarea.form-control {
+  height: auto;
+}
+
 #contact .form-control {
   display: block;
   width: 100%;
