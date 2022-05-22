@@ -24,6 +24,9 @@
 #contact textarea.form-control {
   height: auto;
 }
+#contact form{
+  margin-bottom: 3em;
+}
 
 .col-md-6 {
   position: relative;
