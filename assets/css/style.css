@@ -8,10 +8,10 @@ a {
 blockquote {
   border-left: 5px solid #c12671;
   color: #fcfcfc;
-  font-size: 250%;
+  font-size: 125%; /* 250% */
   font-weight: 400;
   margin: 20px 0;
-  padding-left: 1.5rem;
+  padding-left: 1.5rem !important;
 }
 blockquote * {
   font-size: inherit;
@@ -425,6 +425,9 @@ small {
     line-height: 200%;
     margin: 30px 0 0;
   }
+  p {
+    font-size: 1.25rem;
+  }
   #intro.section .container *:not(span) {
     padding: 0;
   }
@@ -449,7 +452,7 @@ small {
     left: initial;
     bottom: initial;
   }
-  #contact a.btn-floating.btn-large {
+  a.btn-floating.btn-large {
     display: block;
     text-align: center;
     margin: 0 auto;
