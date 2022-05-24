@@ -8,7 +8,7 @@ a {
 blockquote {
   border-left: 5px solid #c12671;
   color: #fcfcfc;
-  font-size: 125%; /* 250% */
+  font-size: 250%;
   font-weight: 400;
   margin: 20px 0;
   padding-left: 1.5rem !important;
@@ -354,6 +354,9 @@ small {
     padding-left: 0px;
     padding-top: 64px;
   }
+  blockquote {
+    font-size: 125%;
+  }
   ul.side-nav a {
     line-height: 100%;
     padding: 0;
@@ -452,8 +455,7 @@ small {
     left: initial;
     bottom: initial;
   }
-  a.btn-floating.btn-large {
-    display: block;
+  #contact a.btn-floating.btn-large {
     text-align: center;
     margin: 0 auto;
   }
