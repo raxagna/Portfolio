@@ -32,7 +32,7 @@ if (!empty($_POST)) {
         $body = join(PHP_EOL, $bodyParagraphs);
 
         if (mail($toEmail, $emailSubject, $body, $headers)) {
-            header('Location: thank-you.html');
+            echo "<p>Thank you for contacting us, $name. You will get a reply within 24 hours.</p>";
         } else {
             $errorMessage = 'Oops, something went wrong. Please try again later';
         }
