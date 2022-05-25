@@ -15,6 +15,12 @@
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
 }
 
+#contact .prompt{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-family: system-ui;}
+
 #contact .row{
   margin-right: auto;
   margin-left: auto;
