@@ -1,58 +1,45 @@
 <?php
-  
-if($_POST) {
-    $name = "";
-    $email = "";
-    $subject = "";
-    $message = "";
-    $email_body = "<div>";
-      
-    if(isset($_POST['name'])) {
-        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-        $email_body .= "<div>
-                           <label><b>Visitor Name:</b></label>&nbsp;<span>".$name."</span>
-                        </div>";
-    }
- 
-    if(isset($_POST['email'])) {
-        $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
-        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
-        $email_body .= "<div>
-                           <label><b>Visitor Email:</b></label>&nbsp;<span>".$email."</span>
-                        </div>";
-    }
-      
-    if(isset($_POST['subject'])) {
-        $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-        $email_body .= "<div>
-                           <label><b>Reason For Contacting Us:</b></label>&nbsp;<span>".$subject."</span>
-                        </div>";
-    }
-      
-    if(isset($_POST['message'])) {
-        $message = htmlspecialchars($_POST['message']);
-        $email_body .= "<div>
-                           <label><b>Visitor Message:</b></label>
-                           <div>".$message."</div>
-                        </div>";
-    }
-      
 
-    $recipient = "razan.i.omer@gmail.com";
-      
-    $email_body .= "</div>";
- 
-    $headers  = 'MIME-Version: 1.0' . "\r\n"
-    .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $email . "\r\n";
-      
-    if(mail($recipient, $subject, $email_body, $headers)) {
-        echo "<p>Thank you for contacting us, $name. You will get a reply within 24 hours.</p>";
-    } else {
-        echo '<p>We are sorry but the email did not go through.</p>';
+$errors = [];
+$errorMessage = '';
+
+if (!empty($_POST)) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    if (empty($name)) {
+        $errors[] = 'Name is empty';
     }
-      
-} else {
-    echo '<p>Something went wrong</p>';
+
+    if (empty($email)) {
+        $errors[] = 'Email is empty';
+    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Email is invalid';
+    }
+
+    if (empty($message)) {
+        $errors[] = 'Message is empty';
+    }
+
+
+    if (empty($errors)) {
+        $toEmail = 'razan.i.omer@gmail.com';
+        $emailSubject = 'New email from your contant form';
+        $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
+
+        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
+        $body = join(PHP_EOL, $bodyParagraphs);
+
+        if (mail($toEmail, $emailSubject, $body, $headers)) {
+            header('Location: thank-you.html');
+        } else {
+            $errorMessage = 'Oops, something went wrong. Please try again later';
+        }
+    } else {
+        $allErrors = join('<br/>', $errors);
+        $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
+    }
 }
+
 ?>
