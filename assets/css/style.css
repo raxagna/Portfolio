@@ -154,9 +154,6 @@ h3 {
   padding: 0px;
   margin: 0 20px;
 }
-#intro.section .container i {
-  padding: 0px;
-}
 #intro.section .underline {
   border-bottom: 5px solid #06915b;
 }
@@ -313,6 +310,11 @@ a.hoverline:hover {
   left: 20px;
   position: relative;
 }
+
+#resume a {
+  margin: 0 20px;
+}
+
 #experience .col.s12.m2 {
   text-align: center;
 }
