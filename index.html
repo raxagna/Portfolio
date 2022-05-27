@@ -299,10 +299,10 @@
                 <form name="gform" id="gform" class="php-email-form mt-4" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdJgAdrBlS0itcnV2Iehn7AkUb7rxDwNZN_TTn1q-1jHkyTHw/formResponse?usp=sf_link" target="hidden_iframe" onsubmit="submitted=true;">
                 <form name="gform" id="gform" class="php-email-form mt-4" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdJgAdrBlS0itcnV2Iehn7AkUb7rxDwNZN_TTn1q-1jHkyTHw/formResponse?usp=sf_link" target="hidden_iframe" onsubmit="submitted=true;">
                     <div class="row">
-                        <div class="col-md-6 form-group">
+                        <div class="col-md-6 userName form-group">
                             <input name="entry.1079486391" id="entry.1079486391" type="text" class="form-control" placeholder="Your Name" required="">
                         </div>
-                        <div class="col-md-6 form-group">
+                        <div class="col-md-6 userEmail form-group">
                             <input name="entry.1919966455" id="entry.1919966455" type="email" class="form-control" placeholder="Your Email" required="">
                         </div>
                     </div>
@@ -319,7 +319,7 @@
                     </div>
                     <div class="text-center" style="padding-top: 15px;"><button type="submit">Send Message</button>
                     </div>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="var submitted=false; if(submitted) {}"></iframe>
                 </form>
             </div>
         </section>
@@ -345,7 +345,6 @@
 
     <!-- Form Submission -->
     <script src="assets/js/form-submission.js"></script>
-    <script type="text/javascript">var submitted=false;</script>
 
 </body>
 

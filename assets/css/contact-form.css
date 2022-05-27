@@ -37,12 +37,13 @@
 
 @media (min-width: 992px){
   .col-md-6 {
-    width: 50%;
+    width: 49%;
   }
-}
-@media (min-width: 992px){
-  .col-md-6 {
+  .col-md-6.userName {
     float: left;
+  }
+  .col-md-6.userEmail {
+    float: right;
   }
 }
 
@@ -64,11 +65,14 @@
 }
 #contact .php-email-form .sent-message {
   display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
-  text-align: center;
   padding: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  background: #008058e3;
+  text-align: center;
+  font-family: monospace;
+  font-size: larger;
   font-weight: 600;
+  color: azure;
 }
 #contact .php-email-form .loading {
   display: none;
@@ -90,10 +94,10 @@
 }
 
 #contact .php-email-form button[type=submit] {
-  background: #18d26e;
+  background: #3da167;
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: azure;
   transition: 0.4s;
   border-radius: 4px;
 }
