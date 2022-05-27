@@ -1,3 +1,8 @@
+#contact.section .container a {
+  padding: 0px;
+  margin: 0 50px;
+}
+
 #contact .form-control {
   display: block;
   width: 100%;
@@ -21,7 +26,7 @@
   text-align: center;
   font-weight: 600;
   font-family: cursive;
-  color: #117556;
+  color: #063728b0;
   margin-bottom: 15px;
   
 }
