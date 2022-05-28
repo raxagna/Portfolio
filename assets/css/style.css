@@ -463,6 +463,12 @@ small {
   }
 }
 
+@media (max-width: 366px) {
+  h2 {
+    font-size: 21px;
+  }
+}
+
 #resume {
   margin: 0px;
   padding: 0px;
