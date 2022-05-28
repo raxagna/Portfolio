@@ -469,9 +469,8 @@ small {
 }
 
 #resume h3 {
-  margin: 0px; 
+  margin: 0; 
   top: 0px;
-  font-size: 2rem;
 }
 
 #resume h3 span {
@@ -483,7 +482,7 @@ small {
   color: #bcf6f0;
 }
 
-@media (min-width: 498px) {
+@media (max-width: 498px) {
   #resume h3 {
     font-size: 2rem;
   }
