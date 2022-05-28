@@ -311,6 +311,15 @@ a.hoverline:hover {
   position: relative;
 }
 
+#resume {
+  margin: 0px;
+  padding: 0px;
+}
+
+#resume h3 span {
+  margin: 0 50px;
+}
+
 #resume a {
   margin: 0 20px;
   color: #bcf6f0;
@@ -465,5 +474,15 @@ small {
   }
   #intro.section {
     background-position-x: 30%;
+  }
+}
+
+@media (max-width: 375px) {
+  #resume h3 {
+    font-size: 2rem;
+  }
+  
+  #resume h3 span {
+    margin: 0;
   }
 }
