@@ -311,20 +311,6 @@ a.hoverline:hover {
   position: relative;
 }
 
-#resume {
-  margin: 0px;
-  padding: 0px;
-}
-
-#resume h3 span {
-  margin: 0 50px;
-}
-
-#resume a {
-  margin: 0 20px;
-  color: #bcf6f0;
-}
-
 #experience .col.s12.m2 {
   text-align: center;
 }
@@ -477,7 +463,27 @@ small {
   }
 }
 
-@media (max-width: 375px) {
+#resume {
+  margin: 0px;
+  padding: 0px;
+}
+
+#resume h3 {
+  margin: 0px; 
+  top: 0px;
+  font-size: 2rem;
+}
+
+#resume h3 span {
+  margin: 0 50px;
+}
+
+#resume a {
+  margin: 0 20px;
+  color: #bcf6f0;
+}
+
+@media (min-width: 498px) {
   #resume h3 {
     font-size: 2rem;
   }
