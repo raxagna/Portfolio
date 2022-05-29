@@ -1,2 +1,2 @@
 # Portfolio
-view razagna's portfolio at [here](https://raxagna.github.io/Portfolio/)
+Click [here](https://razagna.github.io/Portfolio/) to view my portfolio.
